@@ -13,6 +13,7 @@ var footer = document.getElementById('footer');
 var black1 = footer.getElementsByClassName('black');
 for (let i = 0; i < black1.length; i++) {
     element = black1[i];
+    element.style.display = 'inline-block';
     element.style.width = '100px';
     element.style.height = '100px';
     element.style.background = '#00AA00';
@@ -38,3 +39,21 @@ for (let idx = 0; idx < img_containers.length; idx++) {
     var elements = container.getElementsByTagName('img');
     Showsrc(elements);
 }
+// Exercise number 7
+ for (let index = 0; index < divs.length; index++) {
+    var div = divs[index] ;
+    if (div.className === 'images'){
+        var $imgs = div.getElementsByTagName('img');
+        Showsrc($imgs);
+    }
+ }
+ // Exercide number 8
+ var $paragraphs = document.getElementsByTagName('p');
+ console.table($paragraphs);
+ for (let _idx = 0; _idx < $paragraphs.length; _idx++) {
+    var button = document.createElement('button');
+    var content = document.createTextNode('button');
+    button.appendChild(content);
+     var aux = $paragraphs[_idx];
+     aux.appendChild(button);
+ }
