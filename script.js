@@ -70,3 +70,5 @@ var new_li = document.createElement('li');
 var li_content = document.createTextNode($content);
 new_li.appendChild(li_content);
 nav_bar.appendChild(new_li);
+//Exercise number 10
+console.log(window.location);
