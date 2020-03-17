@@ -17,3 +17,24 @@ for (let i = 0; i < black1.length; i++) {
     element.style.height = '100px';
     element.style.background = '#00AA00';
 }
+var Showids = function(array){
+    for (let i = 0; i < array.length; i++) {
+        var element = array[i];
+        console.log(element.id);
+    }
+}
+var divs = document.getElementsByTagName('div');
+Showids(divs);
+var Showsrc = function(array){
+    for (let i = 0; i < array.length; i++) {
+        var element = array[i];
+        console.log(element.src);
+    }
+}
+var img_containers = document.getElementsByClassName('images');
+console.log(img_containers);
+for (let idx = 0; idx < img_containers.length; idx++) {
+    var container = img_containers[idx];
+    var elements = container.getElementsByTagName('img');
+    Showsrc(elements);
+}
