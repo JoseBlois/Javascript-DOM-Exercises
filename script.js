@@ -65,9 +65,7 @@ for (let idx = 0; idx < img_containers.length; idx++) {
  }
  // Exercise number 9
 var $span = footer.getElementsByTagName('span')[0];
-console.log($span);
 var $content = $span.textContent;
-console.log($content);
 var new_li = document.createElement('li');
 var li_content = document.createTextNode($content);
 new_li.appendChild(li_content);
